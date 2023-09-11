@@ -4,6 +4,7 @@
   --default-font-color: #212121;
   --banner-color: #2f303a;
   --contrast-color: #fff;
+  --active-color: red;
   --small-type: 87%;
 }
 ul {
@@ -15,32 +16,32 @@ a {
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #212121;
+  color: var(--default-font-color);
 }
 header a {
-  color: #212121;
+  color: var(--default-font-color);
 }
 /* } dubios aici */
 
-.span-web,
+/* .span-web,
 .span-studio {
   font-family: "Raleway", sans serif;
   font-weight: 700;
   font-size: 162%;
-}
-
-/* tel {
-  color: var(--description-grey);
-}
-tel a:active {
-  color: var(--description-grey);
 } */
-header {
-  font-weight: 500;
-  font-color: var(--default-font-color);
+
+.logo {
+  font-family: "Raleway", sans serif;
+  font-weight: 700;
+  font-size: 162%;
 }
 .span-web {
   color: var(--brand-color);
+}
+
+header {
+  font-weight: 500;
+  font-color: var(--default-font-color);
 }
 
 header a:visited {
@@ -49,22 +50,21 @@ header a:visited {
 header a:hover {
   color: var(--brand-color);
 }
-header a:active {
+header a:active,
+a:focus {
   color: red;
-}
-header a:focus {
-  color: var(--brand-color);
 }
 
 .banner {
   background-color: var(--banner-color);
 }
 
-.button {
+button {
   font-weight: 700;
   font-size: 100%;
   color: var(--contrast-color);
   background-color: var(--brand-color);
+  cursor: pointer;
   border: none;
 }
 
@@ -106,8 +106,14 @@ h3 {
   background-color: var(--brand-color);
   border: none;
   color: var(--contrast-color);
+  cursor: pointer;
 }
-
+.filter-button:active {
+  background-color: var(--brand-color);
+  border: none;
+  color: var(--active-color);
+  cursor: pointer;
+}
 footer {
   background-color: #2f303a;
   font-size: var(--small-type);
@@ -129,4 +135,8 @@ a {
 }
 .footer-section a:hover {
   color: var(--brand-color);
+}
+.footer-section a:focus,
+a:active {
+  color: var(--active-color);
 }
