@@ -1,0 +1,57 @@
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.link:hover {
+  color: #2196f3;
+}
+
+.body {
+  font-family: "Roboto";
+}
+
+h3,
+h2 {
+  font-weight: "700";
+}
+
+h3 {
+  font-size: "14px";
+}
+
+h2 {
+  font-size: "36px";
+}
+.our_team p {
+  font-weight: "400";
+  font-size: "30px";
+  color: #757575;
+}
+.portfolio_filter p {
+  font-weight: "400";
+  font-size: "30px";
+  color: #757575;
+}
+
+.our_team {
+  background-color: #f5f4fa;
+}
+.our_team li {
+  background-color: #ffffff;
+}
+
+.footer_section {
+  background-color: #2f303a;
+}
+.footer_section {
+  font-color: #ffffff;
+}
+
+.button {
+  background-color: #2196f3;
+}
