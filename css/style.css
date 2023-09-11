@@ -1,39 +1,47 @@
 :root {
   --brand-color: #2196f3;
-  --description-grey: #757575;
+  --descriptor-color-grey: #757575;
   --default-font-color: #212121;
   --banner-color: #2f303a;
   --contrast-color: #fff;
-  --active-color: red;
-  --small-type: 87%;
+  --small-font-size: 14px;
+  --logo-font-family: "Raleway", "sans serif", "monospace";
+  --logo-font-weight: 700;
+  --logo-font-size: 26px;
 }
+
+a {
+  color: var(--default-font-color);
+  text-decoration: none;
+}
+.nav-link-current {
+  color: var(--brand-color);
+}
+.nav-link a:visited {
+  color: #212121;
+}
+.nav-link a:hover {
+  color: var(--brand-color);
+}
+.nav-link a:active,
+.nav-link a:focus {
+  color: var(--descriptor-color-grey);
+}
+
 ul {
   list-style-type: none;
 }
-a {
-  text-decoration: none;
-}
 
 body {
-  font-family: "Roboto", sans-serif;
-  color: var(--default-font-color);
+  font-family: "Roboto", "sans-serif", "monospace";
+  font-color: var(--default-font-color);
 }
-header a {
-  color: var(--default-font-color);
-}
-/* } dubios aici */
-
-/* .span-web,
-.span-studio {
-  font-family: "Raleway", sans serif;
-  font-weight: 700;
-  font-size: 162%;
-} */
 
 .logo {
-  font-family: "Raleway", sans serif;
-  font-weight: 700;
-  font-size: 162%;
+  font-family: var(--logo-font-family);
+  font-weight: var(--logo-font-weight);
+  font-size: var(--logo-font-size);
+  line-height: 225%;
 }
 .span-web {
   color: var(--brand-color);
@@ -41,18 +49,16 @@ header a {
 
 header {
   font-weight: 500;
-  font-color: var(--default-font-color);
 }
-
-header a:visited {
+a:visited {
   color: #212121;
 }
-header a:hover {
+a:hover {
   color: var(--brand-color);
 }
-header a:active,
+a:active,
 a:focus {
-  color: red;
+  color: var(--descriptor-color-grey);
 }
 
 .banner {
@@ -61,7 +67,8 @@ a:focus {
 
 button {
   font-weight: 700;
-  font-size: 100%;
+  font-size: 16px;
+  line-height: 188%;
   color: var(--contrast-color);
   background-color: var(--brand-color);
   cursor: pointer;
@@ -70,22 +77,24 @@ button {
 
 p {
   font-weight: 400;
-  font-size: var(--small-type);
-  color: var(--description-grey);
+  line-height: 150%;
+  font-size: var(--small-font-size);
+  color: var(--descriptor-color-grey);
 }
 
 h1 {
   font-weight: 900;
-  font-size: 275%;
-  color: #fff;
+  font-size: 44px;
+  line-height: 375%;
+  color: var(--contrast-color);
 }
 h2 {
-  font-weight: 700;
-  font-size: 225%;
+  font-size: 36px;
+  line-height: 262%;
 }
 h3 {
-  font-weight: 700;
-  font-size: var(--small-type);
+  line-height: 100%;
+  font-size: var(--small-font-size);
 }
 .our-team {
   background-color: #f5f4fa;
@@ -94,11 +103,16 @@ h3 {
   background-color: var(--contrast-color);
 }
 
+.portfolio-items h3 {
+  font-size: 18px;
+  line-height: 225%;
+}
 .filter-button {
-  font-family: "Roboto", sans-serif;
   background-color: #f5f4fa;
+  font-family: "Roboto", "sans-serif", "monospace";
   font-weight: 500;
-  font-size: 100%;
+  font-size: 16px;
+  line-height: 163%;
   color: var(--default-font-color);
   border: none;
 }
@@ -111,17 +125,17 @@ h3 {
 .filter-button:active {
   background-color: var(--brand-color);
   border: none;
-  color: var(--active-color);
+  color: var(--descriptor-color-grey);
   cursor: pointer;
 }
-footer {
+
+.footer-section {
   background-color: #2f303a;
-  font-size: var(--small-type);
   font-weight: 400;
+  font-size: var(--small-font-size);
+  line-height: 100%;
 }
-footer .span_studio {
-  color: var(--contrast-color);
-}
+
 .footer-section .span-studio {
   color: var(--contrast-color);
 }
@@ -129,8 +143,7 @@ footer .span_studio {
   color: var(--contrast-color);
   font-style: normal;
 }
-.footer-section p,
-a {
+.footer-section a {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-section a:hover {
@@ -138,5 +151,5 @@ a {
 }
 .footer-section a:focus,
 a:active {
-  color: var(--active-color);
+  color: var(--descriptor-color-grey);
 }
