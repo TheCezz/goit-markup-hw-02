@@ -1,18 +1,19 @@
+:root {
+  --brand-color: #2196f3;
+  --description-grey: #757575;
+}
+ul {
+  list-style-type: none;
+}
 a {
   text-decoration: none;
   color: #212121;
 }
 #tel {
-  color: #757575;
+  color: var(--description-grey);
 }
-.navigation a:visited {
-  color: #212121;
-}
-.navigation a:hover {
-  color: #2196f3;
-}
-.navigation a:active {
-  color: red;
+#tel a:visited {
+  color: var(--description-grey);
 }
 header {
   font-family: "Roboto", sans serif;
@@ -20,8 +21,6 @@ header {
   font-size: 14px;
   font-color: #212121;
   text-decoration: none;
-}
-a {
 }
 .span_web {
   font-family: "Raleway", sans serif;
@@ -33,4 +32,35 @@ a {
   font-family: "Raleway", sans serif;
   font-weight: 700;
   font-size: 26px;
+}
+
+.navigation a:visited {
+  color: #212121;
+}
+.navigation a:hover {
+  color: #2196f3;
+}
+.navigation a:active {
+  color: red;
+}
+
+.button {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  background-color: var(--brand-color);
+  border-color: var(--brand-color);
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--description-grey);
 }
