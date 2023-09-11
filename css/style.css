@@ -1,66 +1,132 @@
 :root {
   --brand-color: #2196f3;
   --description-grey: #757575;
+  --default-font-color: #212121;
+  --banner-color: #2f303a;
+  --contrast-color: #fff;
+  --small-type: 87%;
 }
 ul {
   list-style-type: none;
 }
 a {
   text-decoration: none;
-  color: #212121;
-}
-#tel {
-  color: var(--description-grey);
-}
-#tel a:visited {
-  color: var(--description-grey);
-}
-header {
-  font-family: "Roboto", sans serif;
-  font-weight: 500;
-  font-size: 14px;
-  font-color: #212121;
-  text-decoration: none;
-}
-.span_web {
-  font-family: "Raleway", sans serif;
-  font-weight: 700;
-  font-size: 26px;
-  color: #2196f3;
-}
-.span_studio {
-  font-family: "Raleway", sans serif;
-  font-weight: 700;
-  font-size: 26px;
 }
 
-.navigation a:visited {
+body {
+  font-family: "Roboto", sans-serif;
   color: #212121;
 }
-.navigation a:hover {
-  color: #2196f3;
+header a {
+  color: #212121;
 }
-.navigation a:active {
+/* } dubios aici */
+
+.span-web,
+.span-studio {
+  font-family: "Raleway", sans serif;
+  font-weight: 700;
+  font-size: 162%;
+}
+
+/* tel {
+  color: var(--description-grey);
+}
+tel a:active {
+  color: var(--description-grey);
+} */
+header {
+  font-weight: 500;
+  font-color: var(--default-font-color);
+}
+.span-web {
+  color: var(--brand-color);
+}
+
+header a:visited {
+  color: #212121;
+}
+header a:hover {
+  color: var(--brand-color);
+}
+header a:active {
   color: red;
+}
+header a:focus {
+  color: var(--brand-color);
+}
+
+.banner {
+  background-color: var(--banner-color);
 }
 
 .button {
-  font-family: "Roboto", sans-serif;
-  color: #fff;
-  font-size: 16px;
   font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  text-align: center;
+  font-size: 100%;
+  color: var(--contrast-color);
   background-color: var(--brand-color);
-  border-color: var(--brand-color);
+  border: none;
 }
 
 p {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  font-size: var(--small-type);
   color: var(--description-grey);
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 275%;
+  color: #fff;
+}
+h2 {
+  font-weight: 700;
+  font-size: 225%;
+}
+h3 {
+  font-weight: 700;
+  font-size: var(--small-type);
+}
+.our-team {
+  background-color: #f5f4fa;
+}
+.team-card {
+  background-color: var(--contrast-color);
+}
+
+.filter-button {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 100%;
+  color: var(--default-font-color);
+  border: none;
+}
+.filter-button:hover {
+  background-color: var(--brand-color);
+  border: none;
+  color: var(--contrast-color);
+}
+
+footer {
+  background-color: #2f303a;
+  font-size: var(--small-type);
+  font-weight: 400;
+}
+footer .span_studio {
+  color: var(--contrast-color);
+}
+.footer-section .span-studio {
+  color: var(--contrast-color);
+}
+.footer-section address {
+  color: var(--contrast-color);
+  font-style: normal;
+}
+.footer-section p,
+a {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-section a:hover {
+  color: var(--brand-color);
 }
