@@ -1,0 +1,36 @@
+a {
+  text-decoration: none;
+  color: #212121;
+}
+#tel {
+  color: #757575;
+}
+.navigation a:visited {
+  color: #212121;
+}
+.navigation a:hover {
+  color: #2196f3;
+}
+.navigation a:active {
+  color: red;
+}
+header {
+  font-family: "Roboto", sans serif;
+  font-weight: 500;
+  font-size: 14px;
+  font-color: #212121;
+  text-decoration: none;
+}
+a {
+}
+.span_web {
+  font-family: "Raleway", sans serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: #2196f3;
+}
+.span_studio {
+  font-family: "Raleway", sans serif;
+  font-weight: 700;
+  font-size: 26px;
+}
