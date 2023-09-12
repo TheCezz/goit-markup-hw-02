@@ -18,7 +18,7 @@ a {
 .nav-link-current {
   color: var(--brand-color);
 }
-.nav-link {
+.nav-link:active {
   color: var(--default-font-color);
 }
 .nav-link a:visited {
