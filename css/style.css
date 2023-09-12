@@ -15,9 +15,11 @@ a {
   color: var(--default-font-color);
   text-decoration: none;
 }
+
 a:visited {
   color: var(--default-font-color);
 }
+
 .nav-link-current {
   color: var(--brand-color);
 }
