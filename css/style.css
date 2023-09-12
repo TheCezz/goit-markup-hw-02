@@ -18,8 +18,11 @@ a {
 .nav-link-current {
   color: var(--brand-color);
 }
+.nav-link {
+  color: var(--default-font-color);
+}
 .nav-link a:visited {
-  color: #212121;
+  color: var(--default-font-color);
 }
 .nav-link a:hover {
   color: var(--brand-color);
@@ -122,7 +125,7 @@ h3 {
 }
 
 .filter-button:focus {
-  background-color: var(--req-svc-button-hover);
+  background-color: var(--svc-button-hover);
   color: var(--contrast-color);
 }
 .filter-button:hover {
