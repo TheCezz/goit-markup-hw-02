@@ -23,9 +23,9 @@ a {
   color: var(--default-font-color);
 }
 
-a:visited {
+/* a:visited {
   color: var(--default-font-color); */
-}
+} */
 .nav-link a:hover {
   color: var(--brand-color);
 }
