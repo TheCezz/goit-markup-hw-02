@@ -8,6 +8,7 @@
   --logo-font-family: "Raleway", "sans serif", "monospace";
   --logo-font-weight: 700;
   --logo-font-size: 26px;
+  --req-svc-button-hover: #188ce8;
 }
 
 a {
@@ -51,7 +52,7 @@ header {
   font-weight: 500;
 }
 a:visited {
-  color: #212121;
+  color: var(--default-font-color);
 }
 a:hover {
   color: var(--brand-color);
@@ -74,7 +75,9 @@ button {
   cursor: pointer;
   border: none;
 }
-
+button:hover {
+  background-color: var(--req-svc-button-hover);
+}
 p {
   font-weight: 400;
   line-height: 150%;
@@ -116,6 +119,10 @@ h3 {
   color: var(--default-font-color);
   border: none;
 }
+.filter-button:focus {
+  background-color: var(--req-svc-button-hover);
+  color: var(--contrast-color);
+}
 .filter-button:hover {
   background-color: var(--brand-color);
   border: none;
@@ -130,7 +137,7 @@ h3 {
 }
 
 .footer-section {
-  background-color: #2f303a;
+  background-color: var(--banner-color);
   font-weight: 400;
   font-size: var(--small-font-size);
   line-height: 100%;
