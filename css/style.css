@@ -27,9 +27,6 @@ a:focus {
 .nav-link a:hover {
   color: var(--brand-color);
 }
-/* .nav-link a:focus {
-  color: var(--brand-color);
-} */
 
 ul {
   list-style-type: none;
